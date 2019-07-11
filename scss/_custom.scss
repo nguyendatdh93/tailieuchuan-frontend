@@ -1,0 +1,67 @@
+.brand-logo {
+  margin:0px auto;
+}
+
+.brand-logo strong {
+  color: #6f9ff7;
+}
+
+.c-table-news tbody tr:nth-of-type(odd) {
+  background-color: #fff !important;
+}
+.c-table-news td img {
+  border-radius:0px !important;
+}
+.c-table-package-highlight tbody tr:nth-of-type(odd) {
+  background-color: #fff !important;
+}
+.c-table-package-highlight body tr:nth-of-type(odd) {
+  background-color: #fff !important;
+}
+.c-table-package-highlight td img {
+  width: 60px;
+  height: 60px;
+  border-radius:0px !important;
+}
+.c-danger {
+  color: #F56C6C
+}
+.c-brand {
+  font-size: 18px;
+}
+.c-brand-sub {
+  text-align: justify;
+}
+.c-register-brand {
+  width: 150px;
+}
+.c-follow-us{
+  background: #dddce1;
+  padding: 30px 2.45rem;
+}
+.c-follow-us .btn-social-icon {
+  width: 30px;
+  height:30px;
+}
+.c-hotline{
+  border: none;
+  background: #dddce1;
+  border-top: 1px solid #e3e3e3;
+}
+.c-hotline h3{  
+    border: none;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.c-hotline .justify-content-xl-between{
+  justify-content: unset !important;
+}
+.c-hotline .ti-headphone{
+  font-size: 15px;
+}
+.sidebar .nav.sub-menu {
+  padding:0.25rem 0 0 0.8rem;
+}
+.sidebar .nav.sub-menu .nav-item::before{
+  background: none !important;
+}
