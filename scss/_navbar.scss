@@ -35,9 +35,9 @@
       }
 
       img {
-        width: calc(#{$sidebar-width-lg} - 130px );
+        /*width: calc(#{$sidebar-width-lg} - 130px );*/
         max-width: 100%;
-        height: 34px;
+        /*height: 34px;*/
         margin: auto;
         vertical-align: middle;
       }
@@ -110,8 +110,7 @@
           .input-group {
             padding: 0 1.1rem;
             width: 400px;
-            border: 1px solid $border-color;
-            border-radius: 2rem;
+            border-radius: 7px;
             .form-control,
             .input-group-text {
               background: transparent;

@@ -45,7 +45,7 @@
 }
 .c-hotline{
   border: none;
-  background: #dddce1;
+  background: #fff;
   border-top: 1px solid #e3e3e3;
 }
 .c-hotline h3{  
@@ -64,4 +64,63 @@
 }
 .sidebar .nav.sub-menu .nav-item::before{
   background: none !important;
+}
+.c-card-not-border{
+  border:none;
+}
+.c-green-color{
+  color:#5c9e20;
+}
+.c-center {
+  text-align:center;
+}
+.c-block-menu{
+  border-bottom: #e4e4e4 1px solid;
+}
+.c-white-bold{
+  color: #fff;
+  font-weight: bold;  
+}
+.nav-item.nav-search {
+  background: #f1f3f4;
+}
+.navbar{
+  box-shadow: 0 5px 3px -5px #cdd1e1;
+}
+.navbar .navbar-brand-wrapper .navbar-brand img{
+  margin-left:15px;
+}
+.c-table-news tr td{
+  padding: 1.05rem 0.1rem 1.05rem  0.9375rem;
+}
+.c-table-package-highlight tr td{
+ padding: 0.5rem 0.1rem 0.5rem 0.9375rem
+}
+.navbar .navbar-menu-wrapper .navbar-nav .nav-item.nav-search {
+  border-radius: 7px;   
+}
+.card .card-title {
+  margin-bottom: 5px !important;
+}
+.c-bold {
+  font-weight:bold;
+}
+.c-table-package-highlight .py-1 {
+  width:75px
+}
+.c-table-news .py-1 {
+  width:40px
+}
+.c-table-package-highlight tr td:not(.c-title,.c-center) {
+  font-size:13px;
+}
+.nav-item:not(.sub-menu):hover {
+  background: #f7f7f7;
+  border-radius: 5px;
+}
+.menu-title:not(.sub-menu.menu-title):hover {
+  background: #f7f7f7;
+}
+td.c-title {
+  width:300px;
 }

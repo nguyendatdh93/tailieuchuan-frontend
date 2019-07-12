@@ -21,13 +21,13 @@
     <!-- partial:../../partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href="index.html"><strong>Tailieuchuan.vn</strong></a>
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../images/brand.png" class="mr-2" alt="logo"></a>
         <a class="navbar-brand brand-logo-mini" href="index.html"><strong>TLC</strong></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+        <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="ti-view-list"></span>
-        </button>
+        </button> -->
         <ul class="navbar-nav mr-lg-2">
           <li class="nav-item nav-search d-none d-lg-block">
             <div class="input-group">
@@ -36,11 +36,9 @@
                   <i class="ti-search"></i>
                 </span>
               </div>
-              <input type="text" class="form-control" id="navbar-search-input" placeholder="Search now" aria-label="search" aria-describedby="search">
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Tìm kiếm" aria-label="search" aria-describedby="search">
             </div>
           </li>
-        </ul>
-        <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item dropdown mr-1">
              <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
               <i class="ti-shopping-cart mx-0"></i>
@@ -138,6 +136,8 @@
               </a>
             </div>
           </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
           <li class="nav-item nav-profile dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
               <img src="../../images/faces/face28.jpg" alt="profile"/>
@@ -162,126 +162,127 @@
       </div>
     </nav>
     <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
+    <div class="container-fluid page-body-wrapper fixed-left">
       <!-- partial:../../partials/_sidebar.html -->
       
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav class="sidebar sidebar-offcanvas fixed-left" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-shield menu-icon"></i>
-              <span class="menu-title">Trang chủ</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="ti-wallet menu-icon"></i>
-              <span class="menu-title">Danh mục tài liệu</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> 
-                  <a class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-basic-sub1" data-target="#ui-basic-sub1">
-                    <i class="ti-folder menu-icon"></i>
-                    <span class="menu-title">Tài liệu toán THPT</span>
-                    <i class="menu-arrow"></i>
-                  </a>
-                  <div class="collapse" id="ui-basic-sub1">
-                    <ul class="nav flex-column sub-menu">
-                      <li class="nav-item"> 
-                        <a class="nav-link">
-                          <i class="ti-folder menu-icon"></i>
-                          <span class="menu-title">Tài liệu toán THPT</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item"> 
-                        <a class="nav-link">
-                          <i class="ti-folder menu-icon"></i>
-                          <span class="menu-title">Tài liệu toán THPT</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="nav-item"> 
-                  <a class="nav-link" data-toggle="collapse" aria-expanded="false" aria-controls="ui-basic-sub2" data-target="#ui-basic-sub2">
-                    <i class="ti-folder menu-icon"></i>
-                    <span class="menu-title">Tài liệu toán THPT</span>
-                    <i class="menu-arrow"></i>
-                  </a>
-                  <div class="collapse" id="ui-basic-sub2">
-                    <ul class="nav flex-column sub-menu">
-                      <li class="nav-item"> 
-                        <a class="nav-link">
-                          <i class="ti-folder menu-icon"></i>
-                          <span class="menu-title">Tài liệu toán THPT</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                      </li>
-                      <li class="nav-item"> 
-                        <a class="nav-link">
-                          <i class="ti-folder menu-icon"></i>
-                          <span class="menu-title">Tài liệu toán THPT</span>
-                          <i class="menu-arrow"></i>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-layout-list-post menu-icon"></i>
-              <span class="menu-title">Danh sách tác giả</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-pie-chart menu-icon"></i>
-              <span class="menu-title">Tài liệu mới đăng</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-star menu-icon"></i>
-              <span class="menu-title">Tài liệu miễn phí</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-star menu-icon"></i>
-              <span class="menu-title">Gói tài liệu giảm giá</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-write menu-icon"></i>
-              <span class="menu-title">Tin tức</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-clipboard menu-icon"></i>
-              <span class="menu-title">Hướng dẫn sử dụng</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-user menu-icon"></i>
-              <span class="menu-title">Đăng ký CTV nội dung</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="ti-user menu-icon"></i>
-              <span class="menu-title">Đăng ký CTV kinh doanh</span>
-            </a>
-          </li>
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic" data-target="#ui-basic">
+                <i class="ti-wallet menu-icon"></i>
+                <span class="menu-title">Danh mục tài liệu</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> 
+                    <a class="nav-link" data-toggle="collapse" collapse-attr="submenu" aria-expanded="false" aria-controls="ui-basic-sub1" data-target="#ui-basic-sub1">
+                      <i class="ti-folder menu-icon"></i>
+                      <span class="menu-title">Tài liệu toán THPT</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic-sub1">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" data-toggle="collapse" aria-expanded="false" href="#" aria-controls="ui-basic-sub2" data-target="#ui-basic-sub2">
+                      <i class="ti-folder menu-icon"></i>
+                      <span class="menu-title">Tài liệu toán THPT</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic-sub2">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-layout-list-post menu-icon"></i>
+                <span class="menu-title">Danh sách tác giả</span>
+              </a>
+            </li>
+          </div>
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-pie-chart menu-icon"></i>
+                <span class="menu-title">Tài liệu mới đăng</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-star menu-icon"></i>
+                <span class="menu-title">Tài liệu miễn phí</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-star menu-icon"></i>
+                <span class="menu-title">Gói tài liệu giảm giá</span>
+              </a>
+            </li>
+          </div>
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-write menu-icon"></i>
+                <span class="menu-title">Tin tức</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-clipboard menu-icon"></i>
+                <span class="menu-title">Hướng dẫn sử dụng</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-user menu-icon"></i>
+                <span class="menu-title">Đăng ký CTV nội dung</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-user menu-icon"></i>
+                <span class="menu-title">Đăng ký CTV kinh doanh</span>
+              </a>
+            </li>
+          </div>
+          
           <li>
             <div class="card c-hotline">
               <div class="card-body">
@@ -301,7 +302,7 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
+              <div class="card c-card-not-border">
                 <div class="card-body">
                   <h4 class="card-title">Thông báo mới</h4>
                   <div class="table-responsive">
@@ -355,7 +356,7 @@
             </div>
 
             <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
+              <div class="card c-card-not-border">
                 <div class="card-body">
                   <h4 class="card-title">Gói tài liệu nổi bật</h4>
                   <div class="table-responsive">
@@ -365,8 +366,8 @@
                           <td class="py-1">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet.
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
                           </td>
                           <td>
                             Đặng Việt Hùng
@@ -384,8 +385,116 @@
                           <td>
                             <strong class="c-danger">300.000</strong>
                           </td>
+                          <td class="c-center">
+                            <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
+                          </td>
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
+                          </td>
                           <td>
-                            <button type="button" class="btn btn-warning">Đặt mua</button>
+                            Đặng Việt Hùng
+                          </td>
+                          <td>
+                            Tài Liệu Tiếng Anh THPT
+                          </td>
+                          <td>
+                            <p>Lớp 10</p>
+                            <p>Lớp 11</p>
+                          </td>
+                          <td>
+                            <strong>124</strong> tài liệu
+                          </td>
+                          <td>
+                            <strong class="c-danger">300.000</strong>
+                          </td>
+                          <td class="c-center">
+                            <span class="c-green-color">Đã mua</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
+                          </td>
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
+                          </td>
+                          <td>
+                            Đặng Việt Hùng
+                          </td>
+                          <td>
+                            Tài Liệu Tiếng Anh THPT
+                          </td>
+                          <td>
+                            <p>Lớp 10</p>
+                            <p>Lớp 11</p>
+                          </td>
+                          <td>
+                            <strong>124</strong> tài liệu
+                          </td>
+                          <td>
+                            <strong class="c-danger">300.000</strong>
+                          </td>
+                          <td class="c-center">
+                            <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
+                          </td>
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
+                          </td>
+                          <td>
+                            Đặng Việt Hùng
+                          </td>
+                          <td>
+                            Tài Liệu Tiếng Anh THPT
+                          </td>
+                          <td>
+                            <p>Lớp 10</p>
+                            <p>Lớp 11</p>
+                          </td>
+                          <td>
+                            <strong>124</strong> tài liệu
+                          </td>
+                          <td>
+                            <strong class="c-danger">300.000</strong>
+                          </td>
+                          <td class="c-center">
+                            <span class="c-green-color">Đã mua</span>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="py-1">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
+                          </td>
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
+                          </td>
+                          <td>
+                            Đặng Việt Hùng
+                          </td>
+                          <td>
+                            Tài Liệu Tiếng Anh THPT
+                          </td>
+                          <td>
+                            <p>Lớp 10</p>
+                            <p>Lớp 11</p>
+                          </td>
+                          <td>
+                            <strong>124</strong> tài liệu
+                          </td>
+                          <td>
+                            <strong class="c-danger">300.000</strong>
+                          </td>
+                          <td class="c-center">
+                            <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
                           </td>
                         </tr>
                         <tr>
@@ -393,7 +502,7 @@
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
                           </td>
                           <td>
-                            Lorem ipsum dolor sit amet, consectetur.
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
                           </td>
                           <td>
                             Đặng Việt Hùng
@@ -411,16 +520,16 @@
                           <td>
                             <strong class="c-danger">300.000</strong>
                           </td>
-                          <td>
-                            <button type="button" class="btn btn-success">Đã mua</button>
+                          <td class="c-center">
+                            <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
                           </td>
                         </tr>
                         <tr>
                           <td class="py-1">
                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
                           </td>
-                          <td>
-                            Lorem ipsum dolor sit amet.
+                          <td class="c-title">
+                            <a href="" class="c-bold">Lorem ipsum dolor.</a>
                           </td>
                           <td>
                             Đặng Việt Hùng
@@ -438,116 +547,8 @@
                           <td>
                             <strong class="c-danger">300.000</strong>
                           </td>
-                          <td>
-                            <button type="button" class="btn btn-warning">Đặt mua</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
-                          </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur.
-                          </td>
-                          <td>
-                            Đặng Việt Hùng
-                          </td>
-                          <td>
-                            Tài Liệu Tiếng Anh THPT
-                          </td>
-                          <td>
-                            <p>Lớp 10</p>
-                            <p>Lớp 11</p>
-                          </td>
-                          <td>
-                            <strong>124</strong> tài liệu
-                          </td>
-                          <td>
-                            <strong class="c-danger">300.000</strong>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-success">Đã mua</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
-                          </td>
-                          <td>
-                            Lorem ipsum dolor sit amet.
-                          </td>
-                          <td>
-                            Đặng Việt Hùng
-                          </td>
-                          <td>
-                            Tài Liệu Tiếng Anh THPT
-                          </td>
-                          <td>
-                            <p>Lớp 10</p>
-                            <p>Lớp 11</p>
-                          </td>
-                          <td>
-                            <strong>124</strong> tài liệu
-                          </td>
-                          <td>
-                            <strong class="c-danger">300.000</strong>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-warning">Đặt mua</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
-                          </td>
-                          <td>
-                            Lorem ipsum dolor sit amet, consectetur.
-                          </td>
-                          <td>
-                            Đặng Việt Hùng
-                          </td>
-                          <td>
-                            Tài Liệu Tiếng Anh THPT
-                          </td>
-                          <td>
-                            <p>Lớp 10</p>
-                            <p>Lớp 11</p>
-                          </td>
-                          <td>
-                            <strong>124</strong> tài liệu
-                          </td>
-                          <td>
-                            <strong class="c-danger">300.000</strong>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-warning">Đặt mua</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td class="py-1">
-                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLZ8HN_Ihfqjq5V_x-yz-QQQs9KPX_4-f0Lo-GeeTqzT5Tto_" alt="image">
-                          </td>
-                          <td>
-                            Lorem ipsum dolor sit amet.
-                          </td>
-                          <td>
-                            Đặng Việt Hùng
-                          </td>
-                          <td>
-                            Tài Liệu Tiếng Anh THPT
-                          </td>
-                          <td>
-                            <p>Lớp 10</p>
-                            <p>Lớp 11</p>
-                          </td>
-                          <td>
-                            <strong>124</strong> tài liệu
-                          </td>
-                          <td>
-                            <strong class="c-danger">300.000</strong>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-warning">Đặt mua</button>
+                          <td class="c-center">
+                            <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
                           </td>
                         </tr>
                       </tbody>
