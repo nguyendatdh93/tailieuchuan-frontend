@@ -172,3 +172,118 @@ td.c-title {
 .c-width-100{
   width:100px;
 }
+.c-image-200-200 {
+  width:200px;
+}
+.c-image-document {
+  width:100%;
+}
+.c-block-package .card-body{
+  padding:0px !important;
+}
+.c-red {
+  color: #fc9ca7;
+}
+.c-image-flex{
+  margin: 0.5rem 0.5rem !important;
+}
+.c-description-package{
+  margin: -30px 0px 0px -20px !important;
+}
+.upload-demo {
+  text-align:center;
+  width:100% !important;
+  min-height: 300px !important;
+}
+.el-upload.el-upload--text {
+  width:100% !important; 
+  height:100%;
+}
+.el-upload-dragger {
+  width:100% !important; 
+  height:100% !important;
+}
+ul.el-upload-list.el-upload-list--text {
+  display: none;
+}
+.el-upload-dragger .el-icon-upload {
+  margin: 100px 0px 16px !important;
+}
+.c-price {
+  position: absolute;
+  bottom: 0.5rem; 
+}
+.c-left-5 {
+  margin-left:5px;
+}
+.c-title {
+  margin-top: 0.5rem;
+  font-weight:bold;
+}
+.c-i-info i:not(:first-child) {
+    margin-left:20px;
+}
+.c-price {
+  padding-top: 75px;    
+}
+.drop-active {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 9999;
+  opacity: .6;
+  text-align: center;
+  background: #000;
+}
+.drop-active h3 {
+  margin: -.5em 0 0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 40px;
+  color: #fff;
+  padding: 0;
+}
+.c-short-border-bottom {
+  width: 130px;
+  border-bottom: 2px solid #ffca41;
+}
+.c-min-height-300 {
+  min-height: 300px;
+}
+.table-focus tbody tr:active {
+  background-color: #eaeaf1;
+}
+
+.table-focus tr:hover>td {
+  background-color: #fff !important;
+}
+
+.table-focus tr.current-row>td {
+  background-color: #efefef !important;
+}
+
+.c-hidden {
+  display: none;
+}
+.el-table tr:hover>td{
+  background-color: #fff;
+}
+.hover-row > td {
+  background-color: initial !important;
+}
+.c-row-active {
+  background-color: #efefef !important;
+}
+.c-info-drop-file {
+  height : 500px;
+}
+.c-info-drop-file .el-alert__description{
+  font-size: 20px !important;
+}

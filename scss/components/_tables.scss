@@ -49,4 +49,12 @@
         }
       }
   }
+  &.table-focus {
+    thead,
+      tbody {
+        tr {
+          cursor: pointer;
+        }
+      }
+  }
 }

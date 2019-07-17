@@ -12,6 +12,7 @@ var inject = require('gulp-inject');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
+// var jquery = require('gulp-jquery');
 
 gulp.paths = {
     dist: 'dist',
@@ -19,7 +20,14 @@ gulp.paths = {
 
 var paths = gulp.paths;
 
-
+// gulp.task('jquery', function () {
+//     return jquery.src({
+//         release: 2, //jQuery 2
+//         flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+//     })
+//     .pipe(gulp.dest('./public/vendor/'));
+//     // creates ./public/vendor/jquery.custom.js
+// });
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
