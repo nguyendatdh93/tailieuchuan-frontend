@@ -21659,6 +21659,10 @@ ul.el-upload-list.el-upload-list--text {
   margin-left: 5px;
 }
 
+.c-left-20 {
+  margin-left: 20px;
+}
+
 .c-title {
   margin-top: 0.5rem;
   font-weight: bold;
@@ -21811,6 +21815,40 @@ ul.el-upload-list.el-upload-list--text {
 
 .c-block-keyword span:first-of-type {
   font-weight: bold;
+}
+
+.c-term-content {
+  height: 500px;
+  overflow: scroll;
+  border: solid 1px #e3e3e3;
+  padding: 10px;
+}
+
+.c-term .row .template-demo {
+  margin: 0px auto;
+}
+
+.c-bank-account .el-select {
+  width: 100%;
+}
+
+.c-font-16 {
+  font-size: 16px;
+}
+
+span.c-name-package {
+  vertical-align: top;
+  position: relative;
+  top: 13px;
+}
+
+.c-package-managerment .float-right i {
+  font-size: 26px;
+  vertical-align: middle;
+}
+
+.c-color-green {
+  color: #67C23A;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

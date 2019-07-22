@@ -12,6 +12,7 @@ var inject = require('gulp-inject');
 var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var merge = require('merge-stream');
+var filepreview = require('filepreview');
 // var jquery = require('gulp-jquery');
 
 gulp.paths = {
