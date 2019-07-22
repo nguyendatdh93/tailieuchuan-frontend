@@ -21851,4 +21851,9 @@ span.c-name-package {
   color: #67C23A;
 }
 
+.c-bank-info table {
+  width: 300px;
+  margin: 0px auto;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
