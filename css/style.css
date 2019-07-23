@@ -21856,4 +21856,33 @@ span.c-name-package {
   margin: 0px auto;
 }
 
+.c-lowercase {
+  text-transform: initial !important;
+}
+
+.c-line-through {
+  text-decoration: line-through;
+}
+
+.c-img-30 {
+  width: 30px;
+}
+
+.c-user-info {
+  border: 1px solid #e3e3e3;
+  padding: 10px;
+}
+
+.c-user-info .col-md-3 {
+  border-right: 1px solid #e3e3e3;
+}
+
+.c-table-package-profile .el-table__header-wrapper {
+  display: none;
+}
+
+.c-img-100 {
+  width: 100px;
+}
+
 /*# sourceMappingURL=maps/style.css.map */

@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Tailieuchuan.vn</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="../../images/brand.png" class="mr-2" alt="logo"></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><strong>TLC</strong></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+        <!-- <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="ti-view-list"></span>
+        </button> -->
+        <ul class="navbar-nav mr-lg-2">
+          <li class="nav-item nav-search d-none d-lg-block">
+            <div class="input-group">
+              <div class="input-group-prepend hover-cursor" id="navbar-search-icon">
+                <span class="input-group-text" id="search">
+                  <i class="ti-search"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control" id="navbar-search-input" placeholder="Tìm kiếm" aria-label="search" aria-describedby="search">
+            </div>
+          </li>
+          <li class="nav-item dropdown mr-1">
+             <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-shopping-cart mx-0"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown mr-1">
+            <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-email mx-0"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">David Grey
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    The meeting is cancelled
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal">Tim Cook
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    New product launch
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                    <img src="../../images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="item-content flex-grow">
+                  <h6 class="ellipsis font-weight-normal"> Johnson
+                  </h6>
+                  <p class="font-weight-light small-text text-muted mb-0">
+                    Upcoming board meeting
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+              <i class="ti-bell mx-0"></i>
+              <span class="count"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
+              <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-success">
+                    <i class="ti-info-alt mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Application Error</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Just now
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-warning">
+                    <i class="ti-settings mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">Settings</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    Private message
+                  </p>
+                </div>
+              </a>
+              <a class="dropdown-item">
+                <div class="item-thumbnail">
+                  <div class="item-icon bg-info">
+                    <i class="ti-user mx-0"></i>
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h6 class="font-weight-normal">New user registration</h6>
+                  <p class="font-weight-light small-text mb-0 text-muted">
+                    2 days ago
+                  </p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <li class="nav-item nav-profile dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+              <img src="../../images/faces/face28.jpg" alt="profile"/>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item">
+                <button type="button" class="btn btn-social-icon-text btn-google"><i class="ti-google"></i>Đăng nhập bằng Google   </button>
+              </a>
+              <a class="dropdown-item">
+                <button type="button" class="btn btn-social-icon-text btn-facebook"><i class="ti-facebook"></i>Đăng nhập bằng Facebook</button>
+              </a>
+              <a class="dropdown-item">
+                <i class="ti-power-off text-primary"></i>
+                Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="ti-view-list"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper fixed-left">
+      <!-- partial:../../partials/_sidebar.html -->
+      
+      <nav class="sidebar sidebar-offcanvas fixed-left" id="sidebar">
+        <ul class="nav">
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#" aria-expanded="false" aria-controls="ui-basic" data-target="#ui-basic">
+                <i class="ti-wallet menu-icon"></i>
+                <span class="menu-title">Danh mục tài liệu</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> 
+                    <a class="nav-link" data-toggle="collapse" collapse-attr="submenu" aria-expanded="false" aria-controls="ui-basic-sub1" data-target="#ui-basic-sub1">
+                      <i class="ti-folder menu-icon"></i>
+                      <span class="menu-title">Tài liệu toán THPT</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic-sub1">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link" data-toggle="collapse" aria-expanded="false" href="#" aria-controls="ui-basic-sub2" data-target="#ui-basic-sub2">
+                      <i class="ti-folder menu-icon"></i>
+                      <span class="menu-title">Tài liệu toán THPT</span>
+                      <i class="menu-arrow"></i>
+                    </a>
+                    <div class="collapse" id="ui-basic-sub2">
+                      <ul class="nav flex-column sub-menu">
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                        <li class="nav-item"> 
+                          <a class="nav-link" href="#">
+                            <i class="ti-folder menu-icon"></i>
+                            <span class="menu-title">Tài liệu toán THPT</span>
+                            <i class="menu-arrow"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-layout-list-post menu-icon"></i>
+                <span class="menu-title">Danh sách tác giả</span>
+              </a>
+            </li>
+          </div>
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-pie-chart menu-icon"></i>
+                <span class="menu-title">Tài liệu mới đăng</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-star menu-icon"></i>
+                <span class="menu-title">Tài liệu miễn phí</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-star menu-icon"></i>
+                <span class="menu-title">Gói tài liệu giảm giá</span>
+              </a>
+            </li>
+          </div>
+          <div class="c-block-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-write menu-icon"></i>
+                <span class="menu-title">Tin tức</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-clipboard menu-icon"></i>
+                <span class="menu-title">Hướng dẫn sử dụng</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-user menu-icon"></i>
+                <span class="menu-title">Đăng ký CTV nội dung</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="ti-user menu-icon"></i>
+                <span class="menu-title">Đăng ký CTV kinh doanh</span>
+              </a>
+            </li>
+          </div>
+          
+          <li>
+            <div class="card c-hotline">
+              <div class="card-body">
+                <div class="d-flex flex-wrap justify-content-between justify-content-md-center justify-content-xl-between align-items-center">
+                  <h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0">Hỗ trợ viên 24/7</h3>
+                  <i class="ti-headphone icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
+                </div>  
+                <p class="mb-0 mt-2 text-danger">19001900</span></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      
+      <!-- partial -->
+      <div class="main-panel" id="app">          
+        <div class="content-wrapper">
+          <div class="row">
+            <div class="col-lg-12 grid-margin stretch-card c-package-managerment">
+              <div class="card c-card-not-border">
+                <div class="card-body">
+                  <h4 class="card-title c-border-bottom">Trang cá nhân</h4>
+                  <br>
+                  <div class="col-md-12">
+                    <div class="row c-user-info">
+                      <div class="col-md-2">
+                        <el-image
+                          class="c-avatar"
+                          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb30tG0y-i1r_afFU5cWOMQfMnb-LS85uA0NsDf8P8DIYXrFX5"
+                          fit="contain"></el-image>
+                      </div>
+                      <div class="col-md-3">
+                        <p class="c-font-16 text-primary">Đặng Việt Hùng</p>
+                        <p><i class="ti-tablet"></i> Giáo viên toán</p>
+                        <p><i class="ti-book"></i> THPT</p>
+                        <p><i class="ti-tag"></i> <span class="text-danger">124</span> Gói tài liệu &nbsp; <span class="text-danger">1240</span> tài liệu</p>
+                        <p><i class="ti-user"></i> <span class="text-primary">1234</span> người theo dõi</p>
+                      </div>                        
+                      <div class="col-md-7">
+                        <p class="c-bold">Giới thiệu</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae tempora iusto ullam! Sed excepturi architecto eligendi aperiam ea eaque, commodi enim nemo reiciendis neque facere reprehenderit voluptates id error ducimus, porro vitae! Saepe quam aspernatur voluptatum nihil sunt, reiciendis nam possimus, dicta non eos dolor et porro aut eveniet. Facilis dignissimos recusandae velit est officia harum, placeat iste vero, rem dolorem modi repellendus, amet earum sed nihil? Autem, odio, est.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <h4 class="card-title c-border-bottom">Gói tài liệu</h4>
+                  <el-table
+                    :data="tableData"
+                    @row-click="visible = true"
+                    row-class-name="row-action"
+                    class="c-table-package-profile"
+                    style="width: 100%">
+                    <el-table-column
+                      prop="username"
+                      label="">
+                      <template>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmwiY8mOxVwmO18J02zxx4KsryIm6AsGU__I93J23XxArnFKh-NQ" class="c-img-100">
+                        <a href="" class="c-bold">Lorem ipsum dolor sit amet.</a>
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="150">
+                      <template>
+                        Đặng Việt Hùng
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="150">
+                      <template>
+                        Tài liệu THPT
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="100">
+                      <template>
+                        <p>Lớp 10</p>
+                        <p>Lớp 11</p>
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="100">
+                      <template>
+                        <span class="c-bold">124</span> tài liệu
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="100">
+                      <template>
+                        <p class="text-danger">300,000</p>
+                      </template>
+                    </el-table-column>
+                    <el-table-column
+                      prop="category"
+                      label=""
+                      width="130">
+                      <template>
+                        <button type="button" class="btn btn-warning c-white-bold">Đặt mua</button>
+                      </template>
+                    </el-table-column>
+                  </el-table>
+                  <br>
+                  <el-pagination
+                    class="float-right"
+                    background
+                    layout="prev, pager, next"
+                    :total="1000">
+                  </el-pagination>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+
+    <div class="row c-follow-us">
+      <div class="col-lg-5">
+        Follow us on:
+        <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="ti-facebook"></i></button>
+        <button type="button" class="btn btn-social-icon btn-outline-youtube"><i class="ti-youtube"></i></button>                                        
+        <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="ti-twitter-alt"></i></button>
+        <button type="button" class="btn btn-social-icon btn-outline-dribbble"><i class="ti-dribbble"></i></button>
+        <button type="button" class="btn btn-social-icon btn-outline-linkedin"><i class="ti-linkedin"></i></button>
+        <button type="button" class="btn btn-social-icon btn-outline-google"><i class="ti-google"></i></button>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="row">
+        <div class="col-lg-5">
+          <p class="c-brand">TAILIEUCHUAN</p> 
+          <p class="c-brand-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati facere omnis provident incidunt numquam illum, sequi reiciendis ullam nobis praesentium iure, fugiat quisquam, nemo voluptate maxime nostrum mollitia nihil sed.</p>
+        </div>
+        <div class="col-lg-5">
+          <p class="c-brand">LIÊN HỆ</p> 
+          <p>CÔNG TY CỔ PHẦN GIÁO DỤC TRỰC TUYẾN ALADANH</p>
+          <p class="c-brand-sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta reprehenderit nulla similique molestias minus, repellat.</p>
+        </div>
+        <div class="col-lg-2">
+          <p class="c-brand-sub">Chính sách và quy định chung chính sách bảo mật thông tin</p> 
+          <img src="http://online.gov.vn/PublicImages/2015/08/27/11/20150827110756-dadangky.png" class="c-register-brand" alt="">
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/todolist.js"></script>
+  <!-- import Vue before Element -->
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.contextMenu.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-contextmenu/2.7.1/jquery.ui.position.js"></script>
+  <script src="https://unpkg.com/vue-upload-component"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/collect.js/4.13.0/collect.js"></script>
+  <script>
+      new Vue({
+        el: '#app',
+        data: function () {
+          return {
+            tableData: [{
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }, {
+              name:"Lorem ipsum dolor sit amet.",
+              category: 'Tin tuyển sinh',
+            }],
+            visible: false,
+            sort: "",
+          }
+        },
+        components: {
+        },
+        watch: {
+        },
+        created() {
+        },
+        methods: {
+          onSubmit() {
+            console.log('submit!');
+          }
+        }
+      });
+  </script>
+  <!-- endinject -->
+</body>
+
+</html>
