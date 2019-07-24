@@ -21885,4 +21885,24 @@ span.c-name-package {
   width: 100px;
 }
 
+.c-hidden-header .el-table__header {
+  display: none !important;
+}
+
+.c-progress-hidden .el-progress__text {
+  display: none;
+}
+
+.c-font-14 {
+  font-size: 14px !important;
+}
+
+.c-title-filter {
+  line-height: 45px;
+}
+
+.c-filter {
+  height: 45px;
+}
+
 /*# sourceMappingURL=maps/style.css.map */
