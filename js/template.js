@@ -16,7 +16,7 @@
         if (element.attr('href').indexOf("index.html") !== -1) {
           element.parents('.nav-item').last().addClass('active');
           if (element.parents('.sub-menu').length) {
-            element.closest('.collapse').addClass('show');
+            element.closest('.collapsea').addClass('show');
             element.addClass('active');
           }
         }
@@ -25,7 +25,7 @@
         if (element.attr('href') && element.attr('href').indexOf(current) !== -1) {
           element.parents('.nav-item').last().addClass('active');
           if (element.parents('.sub-menu').length) {
-            element.closest('.collapse').addClass('show');
+            element.closest('.collapsea').addClass('show');
             element.addClass('active');
           }
           if (element.parents('.submenu-item').length) {
@@ -42,13 +42,15 @@
     })
 
     //Close other submenu in sidebar on opening any
-    sidebar.on('show.bs.collapse', '.collapse', function() {
-      sidebar.find('.collapse.show').collapse('hide');
-    });
+    // sidebar.on('show.bs.collapse', '.collapse', function() {
+    //   console.log('1111')
+    //   sidebar.find('.collapse.show').collapse('hide');
+    // });
 
 
     //Change sidebar 
     $('[data-toggle="minimize"]').on("click", function() {
+      console.log(111);
       body.toggleClass('sidebar-icon-only');
     });
 

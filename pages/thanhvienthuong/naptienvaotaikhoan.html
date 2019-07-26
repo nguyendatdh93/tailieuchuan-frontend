@@ -299,179 +299,87 @@
       </nav>
       
       <!-- partial -->
-      <div class="main-panel">          
+      <div class="main-panel" id="app">          
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card c-card-not-border" id="app">
+            <div class="col-lg-12 grid-margin stretch-card c-bank-account">
+              <div class="card c-card-not-border">
                 <div class="card-body">
-                  <h4 class="card-title c-border-bottom">Quản lý tài liệu bán</h4>
-                  <p class="card-description c-top-10">
-                    Tạo gói tài liệu mới
-                  </p>
-                  <form class="forms-sample">
-                    <div class="c-border-bottom">
-                      <br>
-                      <div class="form-group row">
-                        <label for="exampleInputUsername2" class="col-sm-2 col-form-label">Chọn danh mục</label>
-                        <div class="col-sm-10">
-                          <el-cascader
-                            v-model="value"
-                            placeholder=""
-                            :options="options"
-                            @change="handleChange"></el-cascader>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputEmail2" class="col-sm-2 col-form-label">Chọn lọc</label>
-                        <div class="col-sm-10">
-                          <div class="row">
-                            <div class="col-md-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                              <div class="form-check">
-                                <label class="form-check-label">
-                                  <input type="checkbox" class="form-check-input">
-                                  Default
-                                <i class="input-helper"></i></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-border-bottom">
-                      <br>
-                      <div class="form-group row">
-                        <label for="exampleInputMobile" class="col-sm-2 col-form-label">Ảnh đại diện</label>
-                        <div class="col-sm-10">
-                          <el-upload
-                            class="avatar-uploader"
-                            action="https://jsonplaceholder.typicode.com/posts/"
-                            :show-file-list="false"
-                            :on-success="handleAvatarSuccess"
-                            :before-upload="beforeAvatarUpload">
-                            <img v-if="imageUrl" :src="imageUrl" class="avatar">
-                            <i v-else class="el-icon-plus avatar-uploader-icon"></i>
-                          </el-upload>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputPassword2" class="col-sm-2 col-form-label">Tên gói</label>
-                        <div class="col-sm-10">
-                          <input type="text" class="form-control" id="exampleInputUsername2" placeholder="">
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label">Gới thiệu gói tài liệu</label>
-                        <div class="col-sm-10">
-                          <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-                        </div>
-                      </div>
-                      <div class="form-group row">
-                        <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label">Từ khóa</label>
-                        <div class="col-sm-10">
-                          <el-tag
-                            :key="tag"
-                            v-for="tag in dynamicTags"
-                            closable
-                            :disable-transitions="false"
-                            @close="handleClose(tag)">
-                            {{tag}}
-                          </el-tag>
-                          <el-input
-                            class="input-new-tag"
-                            v-if="inputVisible"
-                            v-model="inputValue"
-                            ref="saveTagInput"
-                            @keyup.enter.native="handleInputConfirm"
-                            @blur="handleInputConfirm"
-                          >
-                          </el-input>
-                          <el-button v-else class="button-new-tag" size="small" @click="showInput">+ Thêm từ khóa</el-button>
-                        </div>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="form-group row">
-                      <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label">Tổng tài liệu</label>
-                      <div class="col-sm-10">
-                        <input type="number" class="form-control c-width-100">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label">Giá bán</label>
-                      <div class="col-sm-10">
-                        <input type="number" class="form-control c-width-100">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label">Hạn sử dụng</label>
-                      <div class="col-sm-10">
-                        <select class="form-control c-width-100">
-                          <option>1 năm</option>
-                          <option>2 năm</option>
-                        </select>
-                      </div>
-                    </div>                    
-                    <br>    
-                    <div class="form-group row">
-                      <label for="exampleInputConfirmPassword2" class="col-sm-2 col-form-label"></label>
-                      <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary mr-2">Tạo mới</button>
-                      </div>
-                    </div>
-                  </form>
+                  <h4 class="card-title c-border-bottom">Nạp tiền vào tài khoản</h4>
+                  <br>
+                  <p class="c-center">Vui lòng chọn phương thức thanh toán phù hợp</p>
+                  <br>
+                  <div class="c-recharge c-center">
+                    <el-radio-group v-model="radio1">
+                      <el-radio-button label="New York">
+                        <p>Nạp tiền thủ công</p>
+                        <p class="card-description">(2-5 phút có tiền)</p>
+                        <i class="el-icon-link text-primary"></i>
+                      </el-radio-button>
+                      <el-radio-button label="Washington">
+                        <p>Internet Banking</p>
+                        <p>Thẻ ATM Online</p>
+                        <p class="card-description">(Cộng tiền tự động)</p>
+                        <el-image
+                          style="width: 80px"
+                          src="https://www.vpbank.com.vn/sites/default/files/products/autolink_08102018.jpg"
+                          fit="fit"></el-image>
+                      </el-radio-button>
+                      <el-radio-button label="Los Angeles">
+                        <p>Thẻ</p>
+                        <p>Visa/Master/Card</p>
+                        <p class="card-description">(Cộng tiền tự động)</p>
+                        <el-image
+                          style="width: 80px"
+                          src="https://cdn.iconscout.com/icon/free/png-256/mastercard-25-675722.png"
+                          fit="fit"
+                        ></el-image>
+                        <el-image
+                          style="width: 80px"
+                          src="http://www.myiconfinder.com/uploads/iconsets/256-256-4c5308bf863a00c56870d053e6ba37c6.png"
+                          fit="fit"
+                        ></el-image>
+                      </el-radio-button>
+                      <el-radio-button label="Chicago">
+                        <p>Ví điện tử MoMo</p>
+                        <p class="card-description">(Cộng tiền tự động)</p>
+                        <el-image
+                          style="width: 80px"
+                          src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1458245625/pwegh6kadcb37kuz0woj.png"
+                          fit="fit"
+                        ></el-image>
+                      </el-radio-button>
+                      <el-radio-button label="Chicago1">
+                        <p>Nạp thẻ GDC</p>
+                        <p class="card-description">(Cộng tiền tự động)</p>
+                        <el-image
+                          style="width: 80px"
+                          src="https://res-2.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco/v1458245625/pwegh6kadcb37kuz0woj.png"
+                          fit="fit"
+                        ></el-image>
+                      </el-radio-button>
+                    </el-radio-group>
+                  </div>
+                  <br>
+                  <p>Vui lòng nhập số tiền cần nạp và ngân hàng thanh toán. Sau đó admin sẽ liên hệ để hướng dẫn bạn. </p>
+                  <br>
+                  <div class="c-center">
+                    <el-form label-position="right" label-width="200px" class="c-input-recharge" :model="formLabelAlign">
+                      <el-form-item label="Số tiền cần nạp">
+                        <el-input v-model="formLabelAlign.name"></el-input>
+                      </el-form-item>
+                      <el-form-item label="Chọn ngân hàng">
+                        <el-select v-model="formLabelAlign.bank" placeholder="Select">
+                          <el-option key="Vietcombank" label="Vietcombank" value="Vietcombank"></el-option>
+                          <el-option key="VPbank" label="VPbank" value="VPbank"></el-option>
+                          <el-option key="Viettinbank" label="Viettinbank" value="Viettinbank"></el-option>
+                        </el-select>
+                      </el-form-item>
+                      <el-form-item size="large">
+                        <el-button type="primary" @click="onSubmit">Nạp tiền</el-button>
+                      </el-form-item>
+                    </el-form>
+                  </div>
                 </div>
               </div>
             </div>
@@ -518,258 +426,40 @@
   <!-- plugins:js -->
   <script src="../../vendors/base/vendor.bundle.base.js"></script>
   <!-- endinject -->
+  <!-- inject:js -->
+  <script src="../../js/off-canvas.js"></script>
+  <script src="../../js/hoverable-collapse.js"></script>
+  <script src="../../js/template.js"></script>
+  <script src="../../js/todolist.js"></script>
   <!-- import Vue before Element -->
   <script src="https://unpkg.com/vue/dist/vue.js"></script>
   <!-- import JavaScript -->
   <script src="https://unpkg.com/element-ui/lib/index.js"></script>
   <script>
-    new Vue({
-      el: '#app',
-      data() {
-        return {
-          imageUrl: '',
-          value: [],
-          options: [{
-            value: 'guide',
-            label: 'Guide',
-            children: [{
-              value: 'disciplines',
-              label: 'Disciplines',
-              children: [{
-                value: 'consistency',
-                label: 'Consistency',
-                children: [],
-              }, {
-                value: 'feedback',
-                label: 'Feedback'
-              }, {
-                value: 'efficiency',
-                label: 'Efficiency'
-              }, {
-                value: 'controllability',
-                label: 'Controllability'
-              }]
-            }, {
-              value: 'navigation',
-              label: 'Navigation',
-              children: [{
-                value: 'side nav',
-                label: 'Side Navigation'
-              }, {
-                value: 'top nav',
-                label: 'Top Navigation'
-              }]
-            }]
-          }, {
-            value: 'component',
-            label: 'Component',
-            children: [{
-              value: 'basic',
-              label: 'Basic',
-              children: [{
-                value: 'layout',
-                label: 'Layout'
-              }, {
-                value: 'color',
-                label: 'Color'
-              }, {
-                value: 'typography',
-                label: 'Typography'
-              }, {
-                value: 'icon',
-                label: 'Icon'
-              }, {
-                value: 'button',
-                label: 'Button'
-              }]
-            }, {
-              value: 'form',
-              label: 'Form',
-              children: [{
-                value: 'radio',
-                label: 'Radio'
-              }, {
-                value: 'checkbox',
-                label: 'Checkbox'
-              }, {
-                value: 'input',
-                label: 'Input'
-              }, {
-                value: 'input-number',
-                label: 'InputNumber'
-              }, {
-                value: 'select',
-                label: 'Select'
-              }, {
-                value: 'cascader',
-                label: 'Cascader'
-              }, {
-                value: 'switch',
-                label: 'Switch'
-              }, {
-                value: 'slider',
-                label: 'Slider'
-              }, {
-                value: 'time-picker',
-                label: 'TimePicker'
-              }, {
-                value: 'date-picker',
-                label: 'DatePicker'
-              }, {
-                value: 'datetime-picker',
-                label: 'DateTimePicker'
-              }, {
-                value: 'upload',
-                label: 'Upload'
-              }, {
-                value: 'rate',
-                label: 'Rate'
-              }, {
-                value: 'form',
-                label: 'Form'
-              }]
-            }, {
-              value: 'data',
-              label: 'Data',
-              children: [{
-                value: 'table',
-                label: 'Table'
-              }, {
-                value: 'tag',
-                label: 'Tag'
-              }, {
-                value: 'progress',
-                label: 'Progress'
-              }, {
-                value: 'tree',
-                label: 'Tree'
-              }, {
-                value: 'pagination',
-                label: 'Pagination'
-              }, {
-                value: 'badge',
-                label: 'Badge'
-              }]
-            }, {
-              value: 'notice',
-              label: 'Notice',
-              children: [{
-                value: 'alert',
-                label: 'Alert'
-              }, {
-                value: 'loading',
-                label: 'Loading'
-              }, {
-                value: 'message',
-                label: 'Message'
-              }, {
-                value: 'message-box',
-                label: 'MessageBox'
-              }, {
-                value: 'notification',
-                label: 'Notification'
-              }]
-            }, {
-              value: 'navigation',
-              label: 'Navigation',
-              children: [{
-                value: 'menu',
-                label: 'NavMenu'
-              }, {
-                value: 'tabs',
-                label: 'Tabs'
-              }, {
-                value: 'breadcrumb',
-                label: 'Breadcrumb'
-              }, {
-                value: 'dropdown',
-                label: 'Dropdown'
-              }, {
-                value: 'steps',
-                label: 'Steps'
-              }]
-            }, {
-              value: 'others',
-              label: 'Others',
-              children: [{
-                value: 'dialog',
-                label: 'Dialog'
-              }, {
-                value: 'tooltip',
-                label: 'Tooltip'
-              }, {
-                value: 'popover',
-                label: 'Popover'
-              }, {
-                value: 'card',
-                label: 'Card'
-              }, {
-                value: 'carousel',
-                label: 'Carousel'
-              }, {
-                value: 'collapse',
-                label: 'Collapse'
-              }]
-            }]
-          }, {
-            value: 'resource',
-            label: 'Resource',
-            children: [{
-              value: 'axure',
-              label: 'Axure Components'
-            }, {
-              value: 'sketch',
-              label: 'Sketch Templates'
-            }, {
-              value: 'docs',
-              label: 'Design Documentation'
-            }]
-          }],
-          dynamicTags: ['Tag 1', 'Tag 2', 'Tag 3'],
-          inputVisible: false,
-          inputValue: '',
-        };
-      },
-      methods: {
-        handleChange(value) {
-          console.log(value);
+      new Vue({
+        el: '#app',
+        data: function () {
+          return {
+            radio1: 'New York',
+            formLabelAlign: {
+              name: '',
+              bank: '',
+              type: ''
+            }
+          };
         },
-        handleAvatarSuccess(res, file) {
-          this.imageUrl = URL.createObjectURL(file.raw);
+        components: {
         },
-        beforeAvatarUpload(file) {
-          const isJPG = file.type === 'image/jpeg';
-          const isLt2M = file.size / 1024 / 1024 < 2;
-
-          if (!isJPG) {
-            this.$message.error('Avatar picture must be JPG format!');
+        watch: {
+        },
+        created() {
+        },
+        methods: {
+          onSubmit() {
+            console.log('submit!');
           }
-          if (!isLt2M) {
-            this.$message.error('Avatar picture size can not exceed 2MB!');
-          }
-          return isJPG && isLt2M;
-        },
-        handleClose(tag) {
-          this.dynamicTags.splice(this.dynamicTags.indexOf(tag), 1);
-        },
-
-        showInput() {
-          this.inputVisible = true;
-          this.$nextTick(_ => {
-            this.$refs.saveTagInput.$refs.input.focus();
-          });
-        },
-
-        handleInputConfirm() {
-          let inputValue = this.inputValue;
-          if (inputValue) {
-            this.dynamicTags.push(inputValue);
-          }
-          this.inputVisible = false;
-          this.inputValue = '';
         }
-      }
-    });
+      });
   </script>
   <!-- endinject -->
 </body>
