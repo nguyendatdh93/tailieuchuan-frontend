@@ -75,7 +75,8 @@
   text-align:center;
 }
 .c-block-menu{
-  border-bottom: #e4e4e4 1px solid;
+  border: #e4e4e4 1px solid;
+  margin-top: 10px;
 }
 .c-white-bold{
   color: #fff;
@@ -441,4 +442,9 @@ span.c-name-package {
 .c-input-recharge {
   width:50%;
   margin: 0px auto;
+}
+
+.block-notification i {
+  color: #248afd;
+  margin-right: 10px;
 }

@@ -19677,7 +19677,7 @@ code {
 .card .card-title {
   color: #787878;
   margin-bottom: 1.2rem;
-  text-transform: uppercase;
+  text-transform: unset;
   font-size: 0.875rem;
   font-weight: 500;
 }
@@ -21479,7 +21479,8 @@ dl li {
 }
 
 .c-block-menu {
-  border-bottom: #e4e4e4 1px solid;
+  border: #e4e4e4 1px solid;
+  margin-top: 10px;
 }
 
 .c-white-bold {
@@ -21933,6 +21934,11 @@ span.c-name-package {
 .c-input-recharge {
   width: 50%;
   margin: 0px auto;
+}
+
+.block-notification i {
+  color: #248afd;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
